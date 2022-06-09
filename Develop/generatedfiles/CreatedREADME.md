@@ -1,10 +1,10 @@
-# Project 1
+# Test
 
 undefined
 
 ## Description
 
-this is what it does...
+This is what it does
 
 ## Table of Contents
 * [Installation Instructions](#installation)
@@ -20,12 +20,9 @@ npm i
 
 ## Usage Information
 
-yes 
+yes
 
 ## License
-    
-    This application is covered under the license linked below:
-    https://choosealicense.com/licenses/apache-2.0
 
 ## Contribution
 
