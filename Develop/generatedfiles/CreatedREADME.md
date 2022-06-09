@@ -1,18 +1,17 @@
-# My Title
+# Project 1
 
-![![badge](https://img.shields.io/badge/license-MIT-lightblue)]
+undefined
 
 ## Description
 
-this is what it does 
+this is what it does...
 
 ## Table of Contents
 * [Installation Instructions](#installation)
 * [Usage Information](#usage-information)
-[MIT](https://choosealicense.com/licenses/MIT)
-* [Contribution Guidelines](#contribution)
-* [Testing] (#test-instructions)
-* [Questions] (#questions)
+* [Contribution](#contribution)
+* [Testing](#Testing)
+* [Questions](#Questions)
 
 ## Installation Instructions
 
@@ -21,22 +20,16 @@ npm i
 
 ## Usage Information
 
-They need to know this...
+yes 
 
-function renderLicenseSection(license) {
-  if (license !== 'None') {
-    return `## [License](#table-of-contents)
+## License
     
     This application is covered under the license linked below:
-    ${renderLicenseLink(license)}`;
-  } else {
-    return ' ';
-  }
-}
+    https://choosealicense.com/licenses/apache-2.0
 
-## [Contribution Guidelines]
+## Contribution
 
-These are the guidelines....
+yes
 
 ## Testing
 

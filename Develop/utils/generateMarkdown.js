@@ -1,8 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== 'None') {
-    return `![![badge](https://img.shields.io/badge/license-${license}-lightblue)]`
+  if (license === 'agpl-3.0'){
+    return `![badge](https://img.shields.io/badge/license-agpl_3.0-orange)`
+  } else if (license === 'apache-2.0'){
+    `![badge](https://img.shields.io/badge/license-apache_2.0}-red)`
+  } else if (license === 'gpl-3.0'){
+    return `![badge](https://img.shields.io/badge/license-gpl_3.0-lightblue)`
+  } else if (license === 'mit'){
+    return `![badge](https://img.shields.io/badge/license-mit-blue)`
   } else {
   return '';
   }
@@ -12,7 +18,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `[${license}](https://choosealicense.com/licenses/${license})`
+    return `https://choosealicense.com/licenses/${license}`
   } else {
     return ' ';
   }
@@ -22,7 +28,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## [License](#table-of-contents)
+    return `## License
     
     This application is covered under the license linked below:
     ${renderLicenseLink(license)}`;
@@ -44,10 +50,9 @@ ${data.description}
 ## Table of Contents
 * [Installation Instructions](#installation)
 * [Usage Information](#usage-information)
-${renderLicenseLink(data.license)}
-* [Contribution Guidelines](#contribution)
-* [Testing] (#test-instructions)
-* [Questions] (#questions)
+* [Contribution](#contribution)
+* [Testing](#Testing)
+* [Questions](#Questions)
 
 ## Installation Instructions
 
@@ -58,9 +63,9 @@ ${data.installation}
 
 ${data.usage}
 
-${renderLicenseSection}
+${renderLicenseSection(data.license)}
 
-## [Contribution Guidelines]
+## Contribution
 
 ${data.contribution}
 
