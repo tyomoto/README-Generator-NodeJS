@@ -27,7 +27,7 @@ GIVEN a command-line application that accepts user input
 ## Video Walkthrough
 
 This link will take you to the video walkthrough and demonstration in how to use this generator.
-![README Walkthrough](https://drive.google.com/file/d/1PN7-0BUtG34S7NoKSEj9_0-HdzBSMr5J/view)
+[README Walkthrough](https://drive.google.com/file/d/1PN7-0BUtG34S7NoKSEj9_0-HdzBSMr5J/view)
 
 ## Website
 This [link](https://github.com/tyomoto/musical-rotary-phone) will take you to the code on github.
