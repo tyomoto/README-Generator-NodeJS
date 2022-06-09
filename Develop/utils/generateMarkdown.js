@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
-    return `https://choosealicense.com/licenses/${license}`
+    return `[License](https://choosealicense.com/licenses/${license})`
   } else {
     return ' ';
   }
@@ -28,10 +28,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return "## License"
+    return `## License
     
-    "This application is covered under the license linked below:"
-    `${renderLicenseLink(license)}`;
+* This application is covered under ${renderLicenseLink(license)}.`;
   } else {
     return ' ';
   }
@@ -40,8 +39,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
- ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 
