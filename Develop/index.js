@@ -33,40 +33,41 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation-instructions',
+        name: 'installation',
         message: 'What command should be run for user installation?',
         default: 'npm i',
     },
     {
         type: 'input',
-        name: 'test-instructions',
+        name: 'test',
         message: 'What command should the user input in order to run tests on the code?',
         default: 'npm test',
     },
     {
         type: 'input',
-        name: 'usage-information',
+        name: 'usage',
         message: 'What does the user need to know regarding the usage of this app',
     },
     {
         type: 'input',
-        name: 'contribution-guidelines',
+        name: 'contribution',
         message: 'What does the user need to know about the contribution guidelines?',
     },
 ];
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeToFile('CreatedREADME.md', generateMarkdown({...inquirerResponses}));
-}
+
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((inquirerResponses)=> {
-        writeToFile();
-        console.log('README has been generated!');
+        const markdown = generateMarkdown(inquirerResponses);
+        console.log(markdown);
+        // writeToFile('CreatedREADME.md', generateMarkdown(inquirerResponses));
+        fs.writeFile('./generatedfiles/CreatedREADME.md', markdown, (err)=>
+        err?console.log(err):console.log('README has been generated!'));
+        
     });
 }
 

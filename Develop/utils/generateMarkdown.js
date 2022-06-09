@@ -42,17 +42,17 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-* [Installation Instructions](#installation-instructions)
+* [Installation Instructions](#installation)
 * [Usage Information](#usage-information)
 ${renderLicenseLink(data.license)}
-* [Contribution Guidelines](#contribution-guidelines)
+* [Contribution Guidelines](#contribution)
 * [Testing] (#test-instructions)
 * [Questions] (#questions)
 
 ## Installation Instructions
 
 In order to run the following app, please use the following code to install necessary pieces:
-${data.installation-instuctions}
+${data.installation}
 
 ## Usage Information
 
@@ -62,13 +62,13 @@ ${renderLicenseSection}
 
 ## [Contribution Guidelines]
 
-${data.contribution-guidelines}
+${data.contribution}
 
 ## Testing
 
 In order to run tests on the following app, please use the command:
 
-${data.test-instructions}
+${data.test}
 
 ## Questions
 
